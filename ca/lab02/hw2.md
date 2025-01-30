@@ -125,4 +125,24 @@ signed:
 -5 -> 1011
 0100 + 1011 = 1111
 
+## Task 12(*)
+
+x = x ^ y (1):
+y = x ^ y (2);
+x = x ^ y (3);
+
+First, subsitute (2) to (3):
+
+x = x ^ (x ^ y) = 0 ^ y = y
+
+Then, let's subsitute x = x ^ y from 1 to y from 2 then we get:
+
+y = (x ^ y) ^ y = x ^ 0 = x;
+
+This results in x = y; y = x
+
+
+
+
+
 
